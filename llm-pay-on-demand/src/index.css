@@ -1,0 +1,185 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #242424;
+   */
+   background-color: #0E1412;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  margin: 0px 10%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  /* display: flex; */
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+hr {
+  margin-top: 2em;
+  height: 1px;
+}
+
+button {
+  min-width: 12em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center content vertically */
+  border-radius: 0.5em;
+  padding: 0.6em 1.2em;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+
+
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: border-color 0.25s;
+  border: 1px solid transparent;
+  background-color: #1a1a1a;
+}
+button > img {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 1em;
+}
+button:hover {
+  border-color: #75079d;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+button:first-child {
+  margin-top: 0.5em;
+}
+button:last-child {
+  margin-bottom: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.WalletConnect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Card-container {
+  border-radius: 10%;
+}
+
+.Card {
+  min-width: 45%;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1A201E;
+  border-radius: 10px;
+  padding: 20px;           /* Added padding */
+  margin: 10px;           /* Added margin */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+  flex-direction: column;
+}
+
+.Card:hover {
+  background-color: #2D3748; /* Hover effect */
+}
+
+.token-info {
+  display: flex;            /* Enables flexbox layout */
+  justify-content: flex-start; /* Aligns items to the start */
+  align-items: center;      /* Centers items vertically (optional) */
+}
+
+.token-info h4 {
+  margin-right: 40px;        /* Adds space to the right of each h4 */
+}
+
+/* Remove margin from the last h4 */
+.token-info h4:last-child {
+  margin-right: 10px;           /* Prevents extra space after the last h4 */
+}
+
+/* .Card h3 {
+  margin-bottom: 0px;  
+} */
+
+
+.alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert-content {
+  max-width: 40%;
+  background: #1A201E;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alert-content h2 {
+  margin: 0 0 10px;
+}
+
+.alert-content p {
+  margin: 0 0 20px;
+}
+
+.alert-content button {
+  cursor: pointer;
+}
