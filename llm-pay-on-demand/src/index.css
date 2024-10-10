@@ -129,13 +129,13 @@ button:last-child {
 }
 
 .token-info {
-  display: flex;            /* Enables flexbox layout */
-  justify-content: flex-start; /* Aligns items to the start */
-  align-items: center;      /* Centers items vertically (optional) */
+  display: flex;            
+  justify-content: flex-start; 
+  align-items: center;      
 }
 
 .token-info h4 {
-  margin-right: 40px;        /* Adds space to the right of each h4 */
+  margin-right: 40px;        
 }
 
 /* Remove margin from the last h4 */
@@ -182,4 +182,71 @@ button:last-child {
 
 .alert-content button {
   cursor: pointer;
+}
+
+.copy-button {
+  width: 24px; 
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  min-width: 16px;
+  width: 16px;
+}
+
+.copy-button:hover {
+  opacity: 0.7;
+}
+
+.token-symbol {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 70%; /* Position above the button */
+  left: 50%;
+  margin-left: -60px; /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 12px;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.api-input {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: self-end;
+}
+.api-input  input {
+  width: 45%;
+  height: 38px;
 }
